@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PM6-hi-kvt" customClass="CustomNavigationBar" customModule="CustomNavigationDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeo-jj-ChI">
+                    <rect key="frame" x="2" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="LBw-ih-pPz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <connections>
+                        <action selector="btnLeft1Tapped:" destination="PM6-hi-kvt" eventType="touchUpInside" id="Qru-iW-XT8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOM-V9-rOl">
+                    <rect key="frame" x="372" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="3I2-kR-xfm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" image="ic_notification"/>
+                    <connections>
+                        <action selector="btnRight1Tapped:" destination="PM6-hi-kvt" eventType="touchUpInside" id="3Bm-sP-WM2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stO-Sa-1Kb" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="392" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="AFR-WZ-mdz"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="vda-aL-mkL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-He-Ohs">
+                    <rect key="frame" x="47" y="20" width="280" height="46"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CJ-3G-Z0v">
+                    <rect key="frame" x="332" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="vxm-nQ-x0p"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" image="ic_search"/>
+                    <connections>
+                        <action selector="btnRight2Tapped:" destination="PM6-hi-kvt" eventType="touchUpInside" id="Pm3-83-XZr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7U-GD-1Tf" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="352" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="LUl-bk-Dn5"/>
+                        <constraint firstAttribute="height" constant="20" id="zRV-bN-XXa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SX-Lh-PLr" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="22" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="aVo-Kn-6T8"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="rnp-aZ-QBa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aeo-jj-ChI" firstAttribute="top" secondItem="PM6-hi-kvt" secondAttribute="top" constant="20" id="0cM-BM-30U"/>
+                <constraint firstItem="stO-Sa-1Kb" firstAttribute="trailing" secondItem="kOM-V9-rOl" secondAttribute="trailing" id="4kS-6L-lxG"/>
+                <constraint firstItem="4CJ-3G-Z0v" firstAttribute="top" secondItem="PM6-hi-kvt" secondAttribute="top" constant="20" id="65T-xA-X9n"/>
+                <constraint firstAttribute="bottom" secondItem="kOM-V9-rOl" secondAttribute="bottom" id="A0c-Qv-sJw"/>
+                <constraint firstItem="wQ3-He-Ohs" firstAttribute="leading" secondItem="aeo-jj-ChI" secondAttribute="trailing" constant="5" id="DQZ-GB-aB7"/>
+                <constraint firstItem="kOM-V9-rOl" firstAttribute="top" secondItem="PM6-hi-kvt" secondAttribute="top" constant="20" id="Foq-RG-pL9"/>
+                <constraint firstAttribute="bottom" secondItem="aeo-jj-ChI" secondAttribute="bottom" id="GNb-xa-ZLD"/>
+                <constraint firstItem="kOM-V9-rOl" firstAttribute="leading" secondItem="4CJ-3G-Z0v" secondAttribute="trailing" id="HoJ-jo-3aA"/>
+                <constraint firstItem="4CJ-3G-Z0v" firstAttribute="leading" secondItem="wQ3-He-Ohs" secondAttribute="trailing" constant="5" id="LeN-bJ-jZI"/>
+                <constraint firstItem="aeo-jj-ChI" firstAttribute="leading" secondItem="PM6-hi-kvt" secondAttribute="leading" constant="2" id="LgC-T7-wU7"/>
+                <constraint firstItem="wQ3-He-Ohs" firstAttribute="top" secondItem="PM6-hi-kvt" secondAttribute="top" constant="20" id="OTk-30-eqK"/>
+                <constraint firstAttribute="trailing" secondItem="kOM-V9-rOl" secondAttribute="trailing" constant="2" id="Q4L-zT-ubF"/>
+                <constraint firstItem="1SX-Lh-PLr" firstAttribute="top" secondItem="aeo-jj-ChI" secondAttribute="top" id="Qxm-YL-j7u"/>
+                <constraint firstAttribute="bottom" secondItem="4CJ-3G-Z0v" secondAttribute="bottom" id="SUd-Gq-2Z9"/>
+                <constraint firstItem="stO-Sa-1Kb" firstAttribute="top" secondItem="kOM-V9-rOl" secondAttribute="top" id="Yqs-HX-Gfv"/>
+                <constraint firstItem="1SX-Lh-PLr" firstAttribute="trailing" secondItem="aeo-jj-ChI" secondAttribute="trailing" id="ghx-1v-yMe"/>
+                <constraint firstAttribute="bottom" secondItem="wQ3-He-Ohs" secondAttribute="bottom" id="nyV-30-47N"/>
+                <constraint firstItem="H7U-GD-1Tf" firstAttribute="trailing" secondItem="4CJ-3G-Z0v" secondAttribute="trailing" id="wsA-zD-T8K"/>
+                <constraint firstItem="H7U-GD-1Tf" firstAttribute="top" secondItem="4CJ-3G-Z0v" secondAttribute="top" id="z0o-X1-lPs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLeft1" destination="aeo-jj-ChI" id="Qr1-09-Wti"/>
+                <outlet property="btnRight1" destination="kOM-V9-rOl" id="UWv-Vl-0S8"/>
+                <outlet property="btnRight2" destination="4CJ-3G-Z0v" id="wgE-2f-KV7"/>
+                <outlet property="lblLeft1Badge" destination="1SX-Lh-PLr" id="Vjf-OV-c3N"/>
+                <outlet property="lblRight1Badge" destination="stO-Sa-1Kb" id="Xza-SC-rce"/>
+                <outlet property="lblRight2Badge" destination="H7U-GD-1Tf" id="Cye-9U-AVb"/>
+                <outlet property="lblTitle" destination="wQ3-He-Ohs" id="RO3-5u-0hf"/>
+                <outletCollection property="horizontalConstraints" destination="Q4L-zT-ubF" collectionClass="NSMutableArray" id="LUw-gB-jRn"/>
+                <outletCollection property="horizontalConstraints" destination="LgC-T7-wU7" collectionClass="NSMutableArray" id="ACW-Fc-GxK"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="426"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_notification" width="20" height="20"/>
+        <image name="ic_search" width="20" height="20"/>
+    </resources>
+</document>

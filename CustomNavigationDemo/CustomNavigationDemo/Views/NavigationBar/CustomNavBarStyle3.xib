@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H7p-Ye-Xsd" customClass="CustomNavigationBar" customModule="CustomNavigationDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-jA-NFh">
+                    <rect key="frame" x="372" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="AMe-lE-4hg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" image="ic_notification"/>
+                    <connections>
+                        <action selector="btnRight1Tapped:" destination="H7p-Ye-Xsd" eventType="touchUpInside" id="lgt-Hp-F6W"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-d1-oZZ">
+                    <rect key="frame" x="47" y="20" width="240" height="46"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KA-Wq-a5y">
+                    <rect key="frame" x="332" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="vL8-D9-HtQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" image="ic_cart"/>
+                    <connections>
+                        <action selector="btnRight2Tapped:" destination="H7p-Ye-Xsd" eventType="touchUpInside" id="zsd-el-fyl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da9-4v-5j5">
+                    <rect key="frame" x="292" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="MVX-M7-rSs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" image="ic_search"/>
+                    <connections>
+                        <action selector="btnRight3Tapped:" destination="H7p-Ye-Xsd" eventType="touchUpInside" id="3E0-hL-h27"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFR-jq-cxq" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="352" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="F3s-ob-sIV"/>
+                        <constraint firstAttribute="height" constant="20" id="dLk-VI-t6s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zk-wJ-TNe" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="392" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1Bp-cX-Y7F"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="JOx-70-7DN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i70-Ea-ZJ8" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="312" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="6NI-E9-Zmg"/>
+                        <constraint firstAttribute="height" constant="20" id="gtg-np-u92"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tH-hD-GEm" customClass="RoundedCountLabel" customModule="CustomNavigationDemo" customModuleProvider="target">
+                    <rect key="frame" x="22" y="20" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="6KI-fs-NwD"/>
+                        <constraint firstAttribute="height" constant="20" id="eQq-V3-xqn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.59999999999999998" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-WU-GZX">
+                    <rect key="frame" x="2" y="20" width="40" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="40" id="KMA-SY-Ssb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <connections>
+                        <action selector="btnLeft1Tapped:" destination="H7p-Ye-Xsd" eventType="touchUpInside" id="bhU-Yu-rAW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3KA-Wq-a5y" firstAttribute="top" secondItem="Bk2-jA-NFh" secondAttribute="top" id="32x-j4-tdL"/>
+                <constraint firstAttribute="bottom" secondItem="0RL-WU-GZX" secondAttribute="bottom" id="6YR-Y7-dqB"/>
+                <constraint firstItem="dFR-jq-cxq" firstAttribute="trailing" secondItem="3KA-Wq-a5y" secondAttribute="trailing" id="6oF-FB-Fny"/>
+                <constraint firstItem="0RL-WU-GZX" firstAttribute="leading" secondItem="H7p-Ye-Xsd" secondAttribute="leading" constant="2" id="BbX-8o-h07"/>
+                <constraint firstItem="HBG-d1-oZZ" firstAttribute="leading" secondItem="0RL-WU-GZX" secondAttribute="trailing" constant="5" id="F9d-Xx-SOh"/>
+                <constraint firstItem="0RL-WU-GZX" firstAttribute="top" secondItem="H7p-Ye-Xsd" secondAttribute="top" constant="20" id="JCs-GN-iTE"/>
+                <constraint firstAttribute="bottom" secondItem="HBG-d1-oZZ" secondAttribute="bottom" id="Mdt-Jb-WAk"/>
+                <constraint firstItem="3KA-Wq-a5y" firstAttribute="height" secondItem="Bk2-jA-NFh" secondAttribute="height" id="Q3E-rm-WWR"/>
+                <constraint firstAttribute="trailing" secondItem="Bk2-jA-NFh" secondAttribute="trailing" constant="2" id="S3F-gK-dyE"/>
+                <constraint firstItem="8zk-wJ-TNe" firstAttribute="trailing" secondItem="Bk2-jA-NFh" secondAttribute="trailing" id="Xbn-6D-ZhU"/>
+                <constraint firstItem="da9-4v-5j5" firstAttribute="height" secondItem="Bk2-jA-NFh" secondAttribute="height" id="ZNp-7Q-QJz"/>
+                <constraint firstItem="5tH-hD-GEm" firstAttribute="trailing" secondItem="0RL-WU-GZX" secondAttribute="trailing" id="bTr-Ic-tN7"/>
+                <constraint firstItem="da9-4v-5j5" firstAttribute="top" secondItem="Bk2-jA-NFh" secondAttribute="top" id="czh-iy-pWE"/>
+                <constraint firstItem="dFR-jq-cxq" firstAttribute="top" secondItem="3KA-Wq-a5y" secondAttribute="top" id="ep9-Bh-2F5"/>
+                <constraint firstItem="i70-Ea-ZJ8" firstAttribute="trailing" secondItem="da9-4v-5j5" secondAttribute="trailing" id="f8h-Oz-xJh"/>
+                <constraint firstItem="da9-4v-5j5" firstAttribute="leading" secondItem="HBG-d1-oZZ" secondAttribute="trailing" constant="5" id="hkZ-TO-oQp"/>
+                <constraint firstItem="8zk-wJ-TNe" firstAttribute="top" secondItem="Bk2-jA-NFh" secondAttribute="top" id="iQJ-lW-ZCg"/>
+                <constraint firstItem="3KA-Wq-a5y" firstAttribute="leading" secondItem="da9-4v-5j5" secondAttribute="trailing" id="jPK-b9-Y8i"/>
+                <constraint firstItem="5tH-hD-GEm" firstAttribute="top" secondItem="0RL-WU-GZX" secondAttribute="top" id="pB3-mD-FT9"/>
+                <constraint firstItem="HBG-d1-oZZ" firstAttribute="top" secondItem="H7p-Ye-Xsd" secondAttribute="top" constant="20" id="rK3-h8-bOo"/>
+                <constraint firstItem="Bk2-jA-NFh" firstAttribute="leading" secondItem="3KA-Wq-a5y" secondAttribute="trailing" id="s37-1e-khA"/>
+                <constraint firstItem="Bk2-jA-NFh" firstAttribute="top" secondItem="H7p-Ye-Xsd" secondAttribute="top" constant="20" id="xVh-uF-5Ns"/>
+                <constraint firstItem="i70-Ea-ZJ8" firstAttribute="top" secondItem="da9-4v-5j5" secondAttribute="top" id="ynf-52-7KP"/>
+                <constraint firstAttribute="bottom" secondItem="Bk2-jA-NFh" secondAttribute="bottom" id="z7V-Kv-kR6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLeft1" destination="0RL-WU-GZX" id="jha-dw-DI9"/>
+                <outlet property="btnRight1" destination="Bk2-jA-NFh" id="pUt-XL-NIn"/>
+                <outlet property="btnRight2" destination="3KA-Wq-a5y" id="J0Z-BM-zhn"/>
+                <outlet property="btnRight3" destination="da9-4v-5j5" id="TlJ-Nh-RCy"/>
+                <outlet property="lblLeft1Badge" destination="5tH-hD-GEm" id="fh7-cO-AWI"/>
+                <outlet property="lblRight1Badge" destination="8zk-wJ-TNe" id="K0N-hk-9tQ"/>
+                <outlet property="lblRight2Badge" destination="dFR-jq-cxq" id="eMG-R8-tLm"/>
+                <outlet property="lblRight3Badge" destination="i70-Ea-ZJ8" id="qxM-Cr-A6e"/>
+                <outlet property="lblTitle" destination="HBG-d1-oZZ" id="Yhf-dL-kD0"/>
+                <outletCollection property="horizontalConstraints" destination="S3F-gK-dyE" collectionClass="NSMutableArray" id="mIk-14-zwo"/>
+                <outletCollection property="horizontalConstraints" destination="BbX-8o-h07" collectionClass="NSMutableArray" id="21U-4L-IB7"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="554"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_cart" width="20" height="18"/>
+        <image name="ic_notification" width="20" height="20"/>
+        <image name="ic_search" width="20" height="20"/>
+    </resources>
+</document>

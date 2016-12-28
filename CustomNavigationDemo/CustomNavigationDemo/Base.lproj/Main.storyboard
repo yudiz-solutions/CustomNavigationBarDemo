@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Peq-RN-HQ6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="BYZ-38-t0r" customClass="FirstVC" customModule="CustomNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-an-Pra" customClass="CustomNavigationContainer" customModule="CustomNavigationDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="APd-s3-kh0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.035294117649999998" green="0.72156862749999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="First"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="left1BtnImage" value="ic_back_arrow"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right1BtnImage" value="ic_notification"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right1BtnHidden" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Nt-an-Pra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bjr-WJ-bMG"/>
+                            <constraint firstAttribute="trailing" secondItem="5Nt-an-Pra" secondAttribute="trailing" id="dVQ-9W-zKd"/>
+                            <constraint firstItem="5Nt-an-Pra" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jcV-Ox-iDn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DrE-Js-QpP"/>
+                    <connections>
+                        <outlet property="navContainer" destination="5Nt-an-Pra" id="uUF-jU-SnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="777.66116941529242"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="gq5-s4-v3M">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="Csz-Uf-aea" customClass="SecondVC" customModule="CustomNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NCi-vL-THT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zgg-rU-gba"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pww-9E-Mgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gik-mz-S04">
+                                <rect key="frame" x="103" y="278.5" width="169" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZRG-Zr-iei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Notification Count +">
+                                    <color key="titleColor" red="0.035294117649999998" green="0.72156862749999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCountPlusAction:" destination="Csz-Uf-aea" eventType="touchUpInside" id="SKg-J4-ViP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJE-2r-lzJ">
+                                <rect key="frame" x="106" y="338.5" width="162" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cDw-Rc-LHz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Notification Count -">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCountMinusAction:" destination="Csz-Uf-aea" eventType="touchUpInside" id="R6H-XS-j8H"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAB-9c-MYI" customClass="CustomNavigationContainer" customModule="CustomNavigationDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="eV5-IZ-UQa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.035294117649999998" green="0.72156862749999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Second"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right2BtnHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right1BtnHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right3BtnHidden" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="left1BtnImage" value="ic_back_arrow"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right1BtnImage" value="ic_notification"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right2BtnImage" value="ic_tick_white"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EAB-9c-MYI" secondAttribute="trailing" id="80q-fl-utI"/>
+                            <constraint firstItem="FJE-2r-lzJ" firstAttribute="top" secondItem="gik-mz-S04" secondAttribute="bottom" constant="10" id="BVQ-LJ-2Xk"/>
+                            <constraint firstItem="EAB-9c-MYI" firstAttribute="top" secondItem="pww-9E-Mgb" secondAttribute="top" id="Hqz-de-qpv"/>
+                            <constraint firstItem="EAB-9c-MYI" firstAttribute="leading" secondItem="pww-9E-Mgb" secondAttribute="leading" id="hJE-eu-76z"/>
+                            <constraint firstItem="FJE-2r-lzJ" firstAttribute="centerX" secondItem="gik-mz-S04" secondAttribute="centerX" id="p4c-n6-UYd"/>
+                            <constraint firstItem="gik-mz-S04" firstAttribute="centerX" secondItem="pww-9E-Mgb" secondAttribute="centerX" id="us3-DI-Edz"/>
+                            <constraint firstItem="gik-mz-S04" firstAttribute="centerY" secondItem="pww-9E-Mgb" secondAttribute="centerY" constant="-30" id="yoN-u2-czT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navContainer" destination="EAB-9c-MYI" id="gZY-Yc-MA6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ac-g3-5aQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="777.66116941529242"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="Td2-m9-RG6">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" id="zkC-Ws-HIw" customClass="ThirdVC" customModule="CustomNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DUJ-hF-iTC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hK8-Ha-utl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DK6-mL-qN7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Yc-0O-W8f" customClass="CustomNavigationContainer" customModule="CustomNavigationDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="reY-U8-Q88"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.035294117649999998" green="0.72156862749999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barStyle">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Third"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right1BtnHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right2BtnHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="right3BtnHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="left1BtnImage" value="ic_back_arrow"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right1BtnImage" value="ic_next_arrow"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right2BtnImage" value="ic_notification"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="right3BtnImage" value="ic_tick_white"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Yc-0O-W8f" firstAttribute="top" secondItem="DK6-mL-qN7" secondAttribute="top" id="7s6-So-dNd"/>
+                            <constraint firstAttribute="trailing" secondItem="6Yc-0O-W8f" secondAttribute="trailing" id="HG3-Ah-8HM"/>
+                            <constraint firstItem="6Yc-0O-W8f" firstAttribute="leading" secondItem="DK6-mL-qN7" secondAttribute="leading" id="qiC-u3-ZPY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navContainer" destination="6Yc-0O-W8f" id="y7N-Nw-egY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgN-Y1-edw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="778"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wz4-5G-ZAp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Peq-RN-HQ6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fpf-kX-zwi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PYc-hS-6hR" kind="relationship" relationship="rootViewController" id="dr0-ad-P4K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12A-O7-YGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="778"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mrf-uv-rS5">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="PYc-hS-6hR" customClass="ViewController" customModule="CustomNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N76-64-p81"/>
+                        <viewControllerLayoutGuide type="bottom" id="36W-fu-5Vh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qeV-5R-jgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-Vi-p51">
+                                <rect key="frame" x="89" y="308" width="197" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gIy-k4-cDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Test Custom Navigation">
+                                    <color key="titleColor" red="0.035294117649999998" green="0.72156862749999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oAG-Df-iMH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5qe-Vi-p51" firstAttribute="centerX" secondItem="qeV-5R-jgb" secondAttribute="centerX" id="fb0-i7-B2d"/>
+                            <constraint firstItem="5qe-Vi-p51" firstAttribute="centerY" secondItem="qeV-5R-jgb" secondAttribute="centerY" id="mb5-7M-gXi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7LN-Pq-6wP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbC-MV-bOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="777.66116941529242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back_arrow" width="20" height="20"/>
+        <image name="ic_next_arrow" width="20" height="20"/>
+        <image name="ic_notification" width="20" height="20"/>
+        <image name="ic_tick_white" width="20" height="20"/>
+    </resources>
+</document>
