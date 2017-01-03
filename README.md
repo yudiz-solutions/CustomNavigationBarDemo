@@ -1,9 +1,9 @@
 # CustomNavigationBarDemo
 CustomNavigationBar view with storyboard and block base structure. 
 - Easy to use 
-- Easy To Implement 
-- Easy To Modification. 
-- Easy to add your style.
+- Easy to implement 
+- Easy to modification
+- Easy to add your style
 
 
 ![Image 1](/../master/Simulator Screen Shot 28-Dec-2016, 12.34.45 PM.png?raw=true "Optional Title")
